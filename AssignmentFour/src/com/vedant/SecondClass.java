@@ -25,8 +25,9 @@ public class SecondClass extends HttpServlet {
 		int subtraction=pc.getNumberOne()-pc.getNumberTwo();
 		
 		 AdditionSubtraction asc=new AdditionSubtraction(addition,subtraction);
-	     String addsub=g.toJson(asc);
+	         String addsub=g.toJson(asc);
 	     
 	     req.setAttribute("addsub", addsub);
+		pw.close();
 	}
 }
