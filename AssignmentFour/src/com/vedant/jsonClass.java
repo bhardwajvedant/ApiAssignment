@@ -48,7 +48,7 @@ public class jsonClass extends HttpServlet {
 		         LastClassParser lcp=new LastClassParser(multiplyadd,multuplysub,multiplyaddsub);
 		         String lastJson=gson.toJson(lcp);
 		         pw.write(lastJson);
-		         
+		         pw.close();
 		         
 		         
 		        
